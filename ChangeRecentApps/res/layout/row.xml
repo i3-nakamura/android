@@ -49,7 +49,7 @@
     </RelativeLayout>
         <View 
               android:layout_width="fill_parent" 
-              android:background="#aaaaaa" 
+              android:background="#c9c9c9" 
               android:layout_height="1px" />
         <View
               android:layout_width="fill_parent" 
