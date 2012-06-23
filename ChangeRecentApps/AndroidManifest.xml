@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ridewide.changerecentapps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="9"/>
+    <supports-screens android:smallScreens="true" android:largeScreens="true" android:normalScreens="true" android:anyDensity="true"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:icon="@drawable/ic_launcher"
+            android:name=".MainActivity" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:noHistory="true">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity  android:icon="@drawable/acv" android:label="Acv" android:name=".TemplateActivity" />
+		<activity  android:icon="@drawable/acv" android:label="Acv" android:name=".AcvActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/andoku" android:label="Andoku" android:name=".AndokuActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/angry_birds" android:label="AngryBirds" android:name=".AngryBirdsActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/browser" android:label="Browser" android:name=".BrowserActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/calculator" android:label="Calculator" android:name=".CalculatorActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/calendar" android:label="Calendar" android:name=".CalendarActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/camera" android:label="Camera" android:name=".CameraActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/clock" android:label="Clock" android:name=".ClockActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/contacts" android:label="Contacts" android:name=".ContactsActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/dropbox" android:label="Dropbox" android:name=".DropboxActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/email" android:label="Email" android:name=".EmailActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/facebook" android:label="Facebook" android:name=".FacebookActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/gallery" android:label="Gallery" android:name=".GalleryActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/gmail" android:label="Gmail" android:name=".GmailActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/googleearth" android:label="Googleearth" android:name=".GoogleearthActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/lastfm" android:label="Lastfm" android:name=".LastfmActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/maps" android:label="Maps" android:name=".MapsActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/market" android:label="Market" android:name=".MarketActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/mint" android:label="Mint" android:name=".MintActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/music" android:label="Music" android:name=".MusicActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/myspace" android:label="Myspace" android:name=".MyspaceActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/notes" android:label="Notes" android:name=".NotesActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/opera" android:label="Opera" android:name=".OperaActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/phone" android:label="Phone" android:name=".PhoneActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/podcast" android:label="Podcast" android:name=".PodcastActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/skype" android:label="Skype" android:name=".SkypeActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/tunein" android:label="Tunein" android:name=".TuneinActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/wapedia" android:label="Wapedia" android:name=".WapediaActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/xbmc" android:label="Xbmc" android:name=".XbmcActivity" android:taskAffinity=""/>
+		<activity  android:icon="@drawable/youtube" android:label="Youtube" android:name="com.ridewide.changerecentapps.YoutubeActivity" android:taskAffinity=""/>
+        </application>
+        
+</manifest>

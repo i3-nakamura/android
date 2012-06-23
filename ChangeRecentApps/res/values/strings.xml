@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Change Recent Apps</string>
+	<string name="Acv">Acv</string>
+	<string name="Andoku">Andoku</string>
+	<string name="AngryBirds">AngryBirds</string>
+	<string name="AppsDock">AppsDock</string>
+	<string name="Browser">Browser</string>
+	<string name="BrowserDock">BrowserDock</string>
+	<string name="Calculator">Calculator</string>
+	<string name="Calendar">Calendar</string>
+	<string name="Camera">Camera</string>
+	<string name="Clock">Clock</string>
+	<string name="Contacts">Contacts</string>
+	<string name="ContactsDock">ContactsDock</string>
+	<string name="Dropbox">Dropbox</string>
+	<string name="Email">Email</string>
+	<string name="Facebook">Facebook</string>
+	<string name="Gallery">Gallery</string>
+	<string name="Gmail">Gmail</string>
+	<string name="Googleearth">Googleearth</string>
+	<string name="Lastfm">Lastfm</string>
+	<string name="Maps">Maps</string>
+	<string name="Market">Market</string>
+	<string name="MessagesDock">MessagesDock</string>
+	<string name="Mint">Mint</string>
+	<string name="Music">Music</string>
+	<string name="Myspace">Myspace</string>
+	<string name="Notes">Notes</string>
+	<string name="Opera">Opera</string>
+	<string name="Phone">Phone</string>
+	<string name="PhoneDock">PhoneDock</string>
+	<string name="Podcast">Podcast</string>
+	<string name="Skype">Skype</string>
+	<string name="Tunein">Tunein</string>
+	<string name="Wapedia">Wapedia</string>
+	<string name="Xbmc">Xbmc</string>
+	<string name="Youtube">Youtube</string>
+    <string name="about_message">Thank you very much available.\n
+If you have any comments please for your feedback. \n
+We would appreciate it if you would evaluate.
+</string>
+</resources>
