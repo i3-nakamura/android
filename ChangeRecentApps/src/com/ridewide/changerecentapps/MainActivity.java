@@ -26,12 +26,18 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 
 public class MainActivity extends Activity implements OnItemClickListener {
+	private static final String MY_BANNER_UNIT_ID = "a14fc9ba1a2cda4";
+	protected static final int MAX_NUM = 6;
 	Context mContext;
 	ArrayList<DummyApp> mList;
 	ListAdapter adapter;
@@ -42,6 +48,14 @@ public class MainActivity extends Activity implements OnItemClickListener {
         setContentView(R.layout.main);
         mContext = this;
         
+        // Admod start ===================
+        LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout4);
+        AdView adView = new AdView(this, AdSize.BANNER, MY_BANNER_UNIT_ID);
+        layout.addView(adView);
+        AdRequest request = new AdRequest();
+        adView.loadAd(request);
+        // Admod end ===================
+        
         mList = loadNote();
         
         adapter = new ListAdapter(this, R.layout.row, mList);
@@ -49,7 +63,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
         ListView listView = (ListView)findViewById(R.id.listView1);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
-        
+                
         final Button btn1 = (Button)findViewById(R.id.button1);
 		btn1.setOnClickListener(new OnClickListener() {
 			@Override
@@ -85,7 +99,11 @@ public class MainActivity extends Activity implements OnItemClickListener {
 				}
 				//ŽÀs
 				num = runList.size();
-				if (num > 0) {
+				if (num == 0) {
+					Toast.makeText(mContext, "Please select a dummy app", Toast.LENGTH_LONG).show();
+				} else if (num > MAX_NUM) {
+					Toast.makeText(mContext, "Can not run, up to 6", Toast.LENGTH_LONG).show();
+				} else {
 					for (i=0; i<num; i++) {
 						Intent intent = new Intent();
 						intent.setClassName(mContext.getApplicationContext(), 
@@ -95,8 +113,6 @@ public class MainActivity extends Activity implements OnItemClickListener {
 						startActivity(intent);
 					}
 					Toast.makeText(mContext, "Completion of a dummy apps (" + num + ")", Toast.LENGTH_LONG).show();
-				} else {
-					Toast.makeText(mContext, "Please select a dummy app", Toast.LENGTH_LONG).show();
 				}
 			}
 		});

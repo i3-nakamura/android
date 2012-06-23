@@ -4,20 +4,25 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="9"/>
+    <uses-sdk android:minSdkVersion="4"/>
     <supports-screens android:smallScreens="true" android:largeScreens="true" android:normalScreens="true" android:anyDensity="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
             android:icon="@drawable/ic_launcher"
-            android:name=".MainActivity" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:noHistory="true">
+            android:name="MainActivity" 
+            android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:noHistory="true">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.google.ads.AdActivity" 
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
         <activity  android:icon="@drawable/acv" android:label="Acv" android:name=".TemplateActivity" />
 		<activity  android:icon="@drawable/acv" android:label="Acv" android:name=".AcvActivity" android:taskAffinity=""/>
 		<activity  android:icon="@drawable/andoku" android:label="Andoku" android:name=".AndokuActivity" android:taskAffinity=""/>
@@ -49,6 +54,6 @@
 		<activity  android:icon="@drawable/wapedia" android:label="Wapedia" android:name=".WapediaActivity" android:taskAffinity=""/>
 		<activity  android:icon="@drawable/xbmc" android:label="Xbmc" android:name=".XbmcActivity" android:taskAffinity=""/>
 		<activity  android:icon="@drawable/youtube" android:label="Youtube" android:name="com.ridewide.changerecentapps.YoutubeActivity" android:taskAffinity=""/>
-        </application>
-        
+	</application>
+    
 </manifest>
